@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schach-Kurs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Menüleiste-Styling */
+        .menu {
+            background: linear-gradient(90deg, #ffcc80, #f48fb1);
+            padding: 1rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .menu ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .menu ul li {
+            margin: 0 1rem;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .menu ul li a:hover {
+            background-color: #ff7043;
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#about">Über den Kurs</a></li>
+                <li><a href="#trainer">Trainer</a></li>
+                <li><a href="#anmeldung">Anmeldung</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="header-container">
+            <h1>Willkommen zu meinem Schach-Kurs!</h1>
+            <p style="color: #680526;">Lerne die Kunst des Schachs auf spielerische Weise</p>
+            <a href="#anmeldung" class="cta-button">Jetzt anmelden!</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Über den Kurs</h2>
+            <p>Unser Schach-Kurs richtet sich an Anfänger und Fortgeschrittene. Lerne alles von den Grundlagen bis zu fortgeschrittenen Strategien!</p>
+            <ul>
+                <li>Eröffnungen und ihre Geheimnisse</li>
+                <li>Strategie- und Taktiktraining</li>
+                <li>Endspieltechniken</li>
+            </ul>
+        </section>
+
+        <section id="trainer">
+            <h2>Dein Trainer</h2>
+            <div class="trainer-info">
+                <img src="trainer.jpg" alt="Foto des Trainers">
+                <div>
+                    <h3>Tobias Dietlmeier</h3>
+                    <p>Mit über 10 Jahren Erfahrung und zahlreichen Turniersiegen bringt Max dir bei, wie du dein Spiel aufs nächste Level bringst!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="anmeldung">
+            <h2>Jetzt anmelden</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="start">Startdatum:</label>
+                <input type="date" id="start" name="start" required>
+
+                <button type="submit">Absenden</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Kontakt: <a href="mailto:info@schachkurs.de">info@schachkurs.de</a> | Telefon: 01234-567890</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
